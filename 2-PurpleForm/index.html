@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <form action="/test">
+        <div>
+            <label for="datab">Введите дату</label>
+            <input type="date" placeholder="дейт" id="datab">
+        </div>
+        <br>
+        <input type="text" placeholder="текст">
+        <input type="button" placeholder="кноп" value="ка">
+        <input type="email" placeholder="email" name="мыло" id="">
+        <input type="file" placeholder="файл" name="файл" id="">
+        <input type="image" placeholder="фото" src="" alt="">
+        <input type="range" placeholder="range" name="" id="">
+        <input type="search" placeholder="поиск" name="" id="">
+        <input type="tel" name="" id="">
+        <br>
+        <div>
+            <label>
+                <span>
+                    Тут числа
+                </span>
+                <input type="number" placeholder="num" name="num" id="">
+            </label>
+        </div>
+        <button disabled="disabled">Не жмякай</button>
+        <button>отправить</button>
+        <input type="checkbox" name="agree" id="agree">
+        <label for="sel">Радио 1</label>
+        <input type="radio" name="selerad" id="sel">
+        <br>
+
+        <label for="vol">Громкость</label>
+        <input type="range" name="volume" id="vol">
+    </form>
+
+    <div>
+        <h2>Свяжитесь со мной</h2>
+        <form action="#">
+            <label for="ema">E-mail*</label>
+            <input type="email" placeholder="Мыло" name="email" id="ema" required>
+            <label for="tg">Телеграм</label>
+            <input type="text" id="tg">
+
+            <div>
+                <select name="selth" id="selth">
+                    <option value="main">Основной отдел</option>
+                    <option value="sec">Второй отдел</option>
+                </select>
+            </div>
+            <div>
+                <label for="mess">Введите сообщение</label>
+                <textarea placeholder="Ваш текст..." name="mess" id="mess"></textarea>
+            </div>
+            <div>
+                <button type="submit">Отправть</button>
+            </div>
+        </form>
+        <div>
+            <form action="/delivery" method="post">
+                <div>
+                    <p>Выберите способ доставки:</p>
+                </div>
+                <div>
+                    <label for="courier">Курьером</label>
+                    <input type="radio" name="delivery" id="courier" value="courier">
+                </div>
+                <div>
+                    <label for="pickup">Самовывоз</label>
+                    <input type="radio" name="delivery" id="pickup" value="pickup" checked>
+                </div>
+                <div>
+                    <label for="post">Почтой</label>
+                    <input type="radio" name="delivery" id="post" value="post">
+                </div>
+                <div>
+                    <button type="submit">Оформить</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
