@@ -1,0 +1,10 @@
+input[type="email"] {
+  background-color: bisque;
+}
+
+input,
+textarea,
+select {
+  background-color: beige;
+  color: blueviolet;
+}
