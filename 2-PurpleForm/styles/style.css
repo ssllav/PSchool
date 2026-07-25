@@ -8,3 +8,11 @@ select {
   background-color: beige;
   color: blueviolet;
 }
+
+input:invalid {
+  background: red;
+}
+
+input:invalid {
+  background: green;
+}

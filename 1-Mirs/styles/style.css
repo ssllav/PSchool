@@ -3,9 +3,25 @@
   color: aliceblue;
 }
 
+#heroButton:hover {
+  background-color: blueviolet;
+}
+
+#heroButton:active {
+  background-color: blueviolet;
+}
+
+.heroForm input:focus {
+  background-color: aquamarine;
+}
+
 .link {
   color: rgb(91, 14, 235);
   text-decoration: wavy;
+}
+
+.link:hover {
+  color: aqua;
 }
 
 h1,
@@ -36,4 +52,27 @@ header a {
   line-height: 24px;
   color: #050038;
   text-decoration: none;
+}
+
+.heroForm + p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050038;
+}
+
+input:invalid {
+  background: red;
+}
+
+input:invalid {
+  background: green;
+}
+
+ul li:first-child {
+  color: purple;
+}
+
+ul li:last-child {
+  color: greenyellow;
 }
