@@ -1,32 +1,39 @@
 #heroButton {
-    background-color: rgb(89, 5, 128);
-    color: aliceblue;
+  background-color: rgb(89, 5, 128);
+  color: aliceblue;
 }
 
 .link {
-    color: rgb(91, 14, 235);
-    text-decoration: wavy;
+  color: rgb(91, 14, 235);
+  text-decoration: wavy;
 }
 
 h1,
 h2 {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
 }
 
 p {
-    font-weight: 400;
-    color: rgb(91, 14, 235);
+  font-weight: 400;
+  color: rgb(91, 14, 235);
 }
 
 .herotext {
-
-    font-size: 18px;
-    line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .sectiontext {
-    font-size: 16px;
-    line-height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+header a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050038;
+  text-decoration: none;
 }
