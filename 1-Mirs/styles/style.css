@@ -24,6 +24,19 @@
   color: aqua;
 }
 
+a::after {
+  color: red;
+  content: " > ";
+}
+
+a::before {
+  content: " < ";
+}
+
+nav ul {
+  list-style: none;
+}
+
 h1,
 h2 {
   font-weight: 400;
@@ -44,6 +57,13 @@ p {
 .sectiontext {
   font-size: 16px;
   line-height: 36px;
+}
+
+.sectiontext::first-letter {
+  /* Увеличит первую букву ровно в 1.5 раза от базового размера */
+  font-size: 1.5em;
+  /* Делает букву жирной, чтобы она выделялась */
+  font-weight: 700;
 }
 
 header a {
@@ -69,10 +89,38 @@ input:invalid {
   background: green;
 }
 
+/*
 ul li:first-child {
   color: purple;
 }
 
 ul li:last-child {
   color: greenyellow;
+}*/
+
+ul li:nth-child(2n-1) {
+  color: purple;
+  background-color: antiquewhite;
+
+  & a {
+    color: rgb(215, 30, 215);
+    background-color: antiquewhite;
+  }
+}
+
+p:not(.sectiontext) {
+  color: rgb(200, 21, 149);
+}
+
+.sectionList {
+  list-style: none;
+  list-style-image: url(../img/chk.webp);
+}
+
+.secSectionList {
+  list-style: none;
+}
+
+.secSectionList li::marker {
+  content: url(../img/chk.webp);
 }
