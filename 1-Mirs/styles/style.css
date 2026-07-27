@@ -1,3 +1,18 @@
+body {
+  margin: 0;
+}
+
+footer {
+  background: #050038;
+  padding:  47px 48px;
+
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 #heroButton {
   background-color: rgb(89, 5, 128);
   color: aliceblue;
@@ -13,10 +28,10 @@
 
 .heroForm input:focus {
   background-color: aquamarine;
+  border-radius: 3px;
 }
 
 .link {
-  color: rgb(91, 14, 235);
   text-decoration: wavy;
 }
 
@@ -33,8 +48,25 @@ a::before {
   content: " < ";
 }
 
+nav {
+  padding: 33px 50px;
+  border-bottom: 1px solid red;
+  margin-bottom: 60px ;
+}
+
 nav ul {
   list-style: none;
+  padding: 0; /*обнулили отступы*/
+  margin: 0;
+
+}
+
+h1 {
+  margin: 0 0 17px 0;
+}
+
+h2 {
+  margin: 0 0 19px 0;
 }
 
 h1,
@@ -52,11 +84,13 @@ p {
 .herotext {
   font-size: 18px;
   line-height: 24px;
+  margin: 0 0 55px 0;
 }
 
 .sectiontext {
   font-size: 16px;
   line-height: 36px;
+  margin: 0 0 40px 0;
 }
 
 .sectiontext::first-letter {
@@ -74,11 +108,26 @@ header a {
   text-decoration: none;
 }
 
+.heroForm input {
+    border-radius: 10px;
+    border: 1px solid #9B99AF;
+    height: 38px;
+    padding: 0 0 0 10px;
+}
+
+.heroForm button {
+  height: 38px;
+  border-radius: 10px ;
+  border: 1px solid #9B99AF;
+  padding: 10px 20px;
+}
+
 .heroForm + p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #050038;
+margin: 8px 0 52px 0;
 }
 
 input:invalid {
@@ -124,3 +173,26 @@ p:not(.sectiontext) {
 .secSectionList li::marker {
   content: url(../img/chk.webp);
 }
+
+.experiment2 {
+  background-color: rgb(223, 223, 250);
+  width: 400px;
+  height: 200px;
+}
+
+.experiment1 {
+  background-color: rgb(223, 223, 250);
+  width: 400px;
+  height: 400px;
+  padding: 10px 50px 20px 50px;
+  margin: 20px auto;
+}
+
+.border1 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: blueviolet;
+  border-radius: 20% 10%;
+  box-sizing: border-box;
+}
+
