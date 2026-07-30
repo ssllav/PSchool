@@ -1,3 +1,29 @@
+body {
+  background-color: rgb(83, 83, 83);
+}
+
+main {
+  background-color: rgb(215, 185, 243);
+  border-radius: 10px;
+  padding: 36px;
+}
+
+.allForm {
+  background-color: rgb(38, 4, 70);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  color: beige;
+}
+
+.downForm {
+  color: aliceblue;
+  background-color: rgb(44, 6, 78);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
 input[type="email"] {
   background-color: bisque;
 }
@@ -5,8 +31,23 @@ input[type="email"] {
 input,
 textarea,
 select {
-  background-color: beige;
-  color: blueviolet;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace;
+  background-color: rgb(66, 19, 128);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  padding: 10px 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: #a3a3a3;
+    font-size: 16px;
+
 }
 
 input:invalid {
@@ -15,4 +56,48 @@ input:invalid {
 
 input:invalid {
   background: green;
+}
+
+.fields {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+label {
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6c38cc;
+  color: #fafafa;
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 32px 0;
+}
+
+h2 {
+  margin: 0 0 19px 0;
+}
+
+h1,
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 56px;
 }

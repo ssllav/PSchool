@@ -9,87 +9,102 @@
 </head>
 
 <body>
-    <form action="/test">
-        <div>
-            <label for="datab">Введите дату</label>
-            <input type="date" placeholder="дейт" id="datab">
-        </div>
-        <br>
-        <input type="text" placeholder="текст">
-        <input type="button" placeholder="кноп" value="ка">
-        <input type="email" placeholder="email" name="мыло" id="">
-        <input type="file" placeholder="файл" name="файл" id="">
-        <input type="image" placeholder="фото" src="" alt="">
-        <input type="range" placeholder="range" name="" id="">
-        <input type="search" placeholder="поиск" name="" id="">
-        <input type="tel" name="" id="">
-        <br>
-        <div>
-            <label>
-                <span>
-                    Тут числа
-                </span>
-                <input type="number" placeholder="num" name="num" id="">
-            </label>
-        </div>
-        <button disabled="disabled">Не жмякай</button>
-        <button>отправить</button>
-        <input type="checkbox" name="agree" id="agree">
-        <label for="sel">Радио 1</label>
-        <input type="radio" name="selerad" id="sel">
-        <br>
-
-        <label for="vol">Громкость</label>
-        <input type="range" name="volume" id="vol">
-    </form>
-
-    <div>
-        <h2>Свяжитесь со мной</h2>
-        <form action="#">
-            <label for="ema">E-mail*</label>
-            <input type="email" placeholder="Мыло" name="email" id="ema" required>
-            <label for="tg">Телеграм</label>
-            <input type="text" id="tg">
-
-            <div>
-                <select name="selth" id="selth">
-                    <option value="main">Основной отдел</option>
-                    <option value="sec">Второй отдел</option>
-                </select>
-            </div>
-            <div>
-                <label for="mess">Введите сообщение</label>
-                <textarea placeholder="Ваш текст..." name="mess" id="mess"></textarea>
-            </div>
-            <div>
-                <button type="submit">Отправть</button>
-            </div>
-        </form>
-        <div>
-            <form action="/delivery" method="post">
-                <div>
-                    <p>Выберите способ доставки:</p>
+    <main>
+        <div class="allForm">
+            <h1>Обратная связь</h1>
+            <form action="/test">
+                <div class="fields">
+                    <label for="datab">Введите дату</label>
+                    <input type="date" placeholder="дейт" id="datab">
                 </div>
-                <div>
-                    <label for="courier">Курьером</label>
-                    <input type="radio" name="delivery" id="courier" value="courier">
+                <br>
+                <div class="fields"><input type="text" placeholder="Тут текст"></div>
+                <div class="fields"><input type="button" placeholder="Тут кноп" value="ка"></div>
+                <div class="fields"><input type="email" placeholder="Тут email" name="мыло" id=""></div>
+                <div class="fields"><input type="file" placeholder="Тут файл" name="файл" id=""></div>
+                <div class="fields"><input type="image" placeholder="Тут фото" src="" alt=""></div>
+                <div class="fields"><input type="range" placeholder="Тут range" name="" id=""></div>
+                <div class="fields">
+                    <input type="search" placeholder="Тут поиск" name="" id="">                   
                 </div>
-                <div>
-                    <label for="pickup">Самовывоз</label>
-                    <input type="radio" name="delivery" id="pickup" value="pickup" checked>
+                <div class="fields"><input type="tel" name="" id=""></div>
+                <br>
+                <div class="fields">
+                    <label>
+                        <span>
+                            Тут числа
+                        </span>
+                        <input type="number" placeholder="Тут цифры" name="num" id="">
+                    </label>
                 </div>
-                <div>
-                    <label for="post">Почтой</label>
-                    <input type="radio" name="delivery" id="post" value="post">
+                <div class="fields"><button disabled="disabled">Не жмякай</button></div>
+                <div class="fields"><button>отправить</button></div>
+                <input type="checkbox" name="agree" id="agree">
+                <div class="fields">
+                    <label for="sel">Радио 1</label>
+                    <input type="radio" name="selerad" id="sel">
                 </div>
-                <div>
-                    <button type="submit">Оформить</button>
+                <br>
+        
+                <div class="fields">
+                    <label for="vol">Громкость</label>
+                    <input type="range" name="volume" id="vol">
                 </div>
             </form>
         </div>
-
-
-    </div>
+    
+        <div class = "allForm">
+            <h2>Свяжитесь со мной</h2>
+            <form action="#">
+                <div class="fields">
+                    <label for="ema">E-mail*</label>
+                    <input type="email" placeholder="Тут Мыло" name="email" id="ema" required>
+                </div>
+                <div class="fields">
+                    <label for="tg">Телеграм</label>
+                    <input type="text" id="tg">
+                </div>
+    
+                <div class="fields">
+                    <select name="selth" id="selth">
+                        <option value="main">Основной отдел</option>
+                        <option value="sec">Второй отдел</option>
+                    </select>
+                </div>
+                <div class="fields">
+                    <label for="mess">Введите сообщение</label>
+                    <textarea placeholder="Тут Ваш текст..." name="mess" id="mess"></textarea>
+                </div>
+                <div class="fields">
+                    <button type="submit">Отправть</button>
+                </div>
+            </form>
+            <div class="fields">
+                <form action="/delivery" method="post">
+                    <div>
+                        <p>Выберите способ доставки:</p>
+                    </div>
+                    <div class="fields">
+                        <label for="courier">Курьером</label>
+                        <input type="radio" name="delivery" id="courier" value="courier">
+                    </div>
+                    <div class="fields">
+                        <label for="pickup">Самовывоз</label>
+                        <input type="radio" name="delivery" id="pickup" value="pickup" checked>
+                    </div>
+                    <div class="fields">
+                        <label for="post">Почтой</label>
+                        <input type="radio" name="delivery" id="post" value="post">
+                    </div>
+                    <div class="fields">
+                        <button type="submit">Оформить</button>
+                    </div>
+                </form>
+            </div>
+    
+    
+        </div>
+    </main>
 
 </body>
 
