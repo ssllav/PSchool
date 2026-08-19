@@ -1,10 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
 
 footer {
   background: #050038;
-  padding:  47px 48px;
+  padding: 47px 48px;
+
 
 }
 
@@ -16,10 +21,12 @@ footer a {
 #heroButton {
   background-color: rgb(89, 5, 128);
   color: aliceblue;
+  transition: background-color 1s 1s, border-radius 1s 2s;
 }
 
 #heroButton:hover {
   background-color: blueviolet;
+  border-radius: 15px;
 }
 
 #heroButton:active {
@@ -51,18 +58,24 @@ a::before {
 nav {
   padding: 33px 50px;
   border-bottom: 1px solid red;
-  margin-bottom: 60px ;
+  margin-bottom: 60px;
 }
 
 nav ul {
   list-style: none;
-  padding: 0; /*обнулили отступы*/
+  padding: 0;
+  /*обнулили отступы*/
   margin: 0;
 
 }
 
 h1 {
   margin: 0 0 17px 0;
+<<<<<<< HEAD
+  text-align: left;
+=======
+  font-size: 4em;
+>>>>>>> 04a3751e4574a9bff6d161302409f5233395b362
 }
 
 h2 {
@@ -72,7 +85,7 @@ h2 {
 h1,
 h2 {
   font-weight: 400;
-  font-size: 48px;
+  font-size: max ( 4em, 48px );
   line-height: 56px;
 }
 
@@ -109,25 +122,25 @@ header a {
 }
 
 .heroForm input {
-    border-radius: 10px;
-    border: 1px solid #9B99AF;
-    height: 38px;
-    padding: 0 0 0 10px;
+  border-radius: 10px;
+  border: 1px solid #9B99AF;
+  height: 38px;
+  padding: 0 0 0 10px;
 }
 
 .heroForm button {
   height: 38px;
-  border-radius: 10px ;
+  border-radius: 10px;
   border: 1px solid #9B99AF;
   padding: 10px 20px;
 }
 
-.heroForm + p {
+.heroForm+p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #050038;
-margin: 8px 0 52px 0;
+  margin: 8px 0 52px 0;
 }
 
 input:invalid {
@@ -157,6 +170,11 @@ ul li:nth-child(2n-1) {
   }
 }
 
+ul li:hover {
+  padding-left: 5px;
+  transition: padding-left 0.5s;
+}
+
 p:not(.sectiontext) {
   color: rgb(200, 21, 149);
 }
@@ -174,25 +192,51 @@ p:not(.sectiontext) {
   content: url(../img/chk.webp);
 }
 
-.experiment2 {
+.exp div {
   background-color: rgb(223, 223, 250);
-  width: 400px;
+  width: 20vw;
   height: 200px;
-}
-
-.experiment1 {
-  background-color: rgb(223, 223, 250);
-  width: 400px;
-  height: 400px;
   padding: 10px 50px 20px 50px;
-  margin: 20px auto;
-}
-
-.border1 {
+  margin: 10px;
   border-width: 5px;
   border-style: solid;
   border-color: blueviolet;
   border-radius: 20% 10%;
   box-sizing: border-box;
+  transition: margin-left 2s, background-color 1s, transform 1s;
+}
+
+.exp div:nth-child(1):hover {
+  background-color: #9B99AF;
+  margin-left: 40px;
+  transform: rotate(45deg); /*rotate3d 6 граней есть ещё*/
+}
+
+.exp div:nth-child(2):hover {
+  margin-left: 40px;
+  transform: scale(0.5,1);
+  transform-origin: left bottom;
+}
+
+.exp div:nth-child(3):hover {
+  margin-left: 40px;
+  transform: translateX(200px);
+}
+
+.exp div:nth-child(4):hover {
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.exp div:nth-child(5):hover {
+  transform:skewX(10deg);
+}
+
+.exp div:nth-child(6):hover {
+  animation: my-move 2s ease forwards;
+}
+
+@keyframes my-move {
+  50% {transform: translateX(10%);}
+  100% {transform: translateX(10%) translateY(10%);}
 }
 

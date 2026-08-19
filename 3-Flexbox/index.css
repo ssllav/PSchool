@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+	--primary: #0018ED;
+	--mainFont: #2D2E3A;
+	--greyFont: #696C74;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: var(--mainFont);
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 32px;
+	border: 1px solid #D1D6E9;
+	border-radius: 12px;
+	max-width: 1440px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.card__name {
+	display: flex;
+	align-items: center;
+	gap: 0 24px;
+}
+
+.card__title {
+	color: var(--mainFont);
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 120%;
+}
+
+.card__school {
+	color: var(--greyFont);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.card__stats {
+	display: flex;
+	gap: 0 24px;
+}
+
+.card__stat {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card__stat > div:first-child {
+	color: var(--greyFont);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.card__stat>div:last-child {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media screen and (max-width: 600px) {
+	.card__stats {
+		flex-wrap: wrap;
+		row-gap: 20px;
+		flex: 1;
+	}
+
+	.card__stat {
+		flex: 0 1 calc(100% / 2 - 12px);
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.card__stat {
+		flex: 0 1 100%;
+	}
+}
