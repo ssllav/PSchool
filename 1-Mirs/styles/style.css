@@ -8,9 +8,16 @@ body {
 
 footer {
   background: #050038;
-  padding: 47px 48px;
+  padding: 47px 40px;
+  color: #ffffff;
+}
 
-
+footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
 }
 
 footer a {
@@ -22,6 +29,7 @@ footer a {
   background-color: rgb(89, 5, 128);
   color: aliceblue;
   transition: background-color 1s 1s, border-radius 1s 2s;
+  margin: 0 auto;
 }
 
 #heroButton:hover {
@@ -57,11 +65,14 @@ a::before {
 
 nav {
   padding: 33px 50px;
-  border-bottom: 1px solid red;
   margin-bottom: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav ul {
+  display: flex;
+  gap: 34px;
   list-style: none;
   padding: 0;
   /*обнулили отступы*/
@@ -70,19 +81,20 @@ nav ul {
 }
 
 h1 {
-  margin: 0 0 17px 0;
-  font-size: 4em;
+  margin: 40px 0 17px 0;
+  font-size: 3em;
 }
 
 h2 {
-  margin: 0 0 19px 0;
+  margin: 40px 0 19px 0;
+  font-size: 2em;
 }
 
 h1,
 h2 {
   font-weight: 400;
   font-size: max ( 4em, 48px );
-  line-height: 56px;
+  line-height: 48px;
 }
 
 p {
@@ -117,8 +129,14 @@ header a {
   text-decoration: none;
 }
 
+.heroform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .heroForm input {
-  border-radius: 10px;
+  border-radius: 32px;
   border: 1px solid #9B99AF;
   height: 38px;
   padding: 0 0 0 10px;
@@ -178,10 +196,16 @@ p:not(.sectiontext) {
 .sectionList {
   list-style: none;
   list-style-image: url(../img/chk.webp);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .secSectionList {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .secSectionList li::marker {
@@ -236,3 +260,29 @@ p:not(.sectiontext) {
   100% {transform: translateX(10%) translateY(10%);}
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 0;
+  margin-bottom: 120px;
+}
+
+.section {
+  display: flex;
+}
+
+.section-reverse {
+    display: flex;
+  flex-direction: row-reverse;
+
+}
+
+#hero {
+  display: flex;
+  gap: 65px;
+}
+
+header {
+    border-bottom: 1px solid red;
+    margin-bottom: 60px;
+}
