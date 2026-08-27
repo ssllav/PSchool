@@ -1,7 +1,15 @@
 :root {
     --color-primary: #6c38cc;
     --color-bg: #16171D;
+    --color-bg-medium: #1E1F29;
+    --color-bg-light:#2E2D3D;
     --space-10: 10px;
+    --color-text:#fafafa;
+    --color-text-hover:#f8b4e8;
+    --color-stroke:#405064;
+    --border-8:8px;
+    --layout-width:1172px;
+    --gradient:linear-gradient(93deg, #e66465, #9198e5);;
 }
 
 html {
@@ -10,4 +18,9 @@ html {
 
 body {
     background: var(--color-bg);
+    margin: 0 auto;
+    font-family: 'Fira Sans', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text);
 }
