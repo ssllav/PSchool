@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 24px;
 }
 
 .hero__left {
@@ -26,4 +27,45 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero_cta {
+        justify-content: center;
+    }
+
+    .hero__h1 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .hero__h1 {
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .hero__right {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 24px;
+    }
+
+    .button {
+        padding: 12px 32px;
+    }
+
+    .hero_cta {
+        gap: 16px;
+    }
 }
