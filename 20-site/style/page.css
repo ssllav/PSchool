@@ -1,71 +1,90 @@
 .hero {
-    max-width: var(--layout-width);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 24px;
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
 }
 
 .hero__left {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .hero__h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 100%;
-    color: var(--color-text);
+  margin: 0;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 100%;
+  color: var(--color-text);
 }
 
 .hero__h1_gradient {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero_cta {
+  display: flex;
+  gap: 32px;
+  margin: 10px;
+}
+
+.button-more {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
-    .hero {
-        flex-direction: column;
-    }
-    .hero_cta {
-        justify-content: center;
-    }
+  .hero {
+    flex-direction: column;
+  }
+  .hero_cta {
+    justify-content: center;
+  }
 
-    .hero__h1 {
-        text-align: center;
-    }
+  .hero__h1 {
+    text-align: center;
+  }
+}
 
+@media (max-width: 860px) {
+  .headling__bottom {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .post__header {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 640px) {
-    .hero__h1 {
-        font-size: 30px;
-        line-height: 120%;
-    }
+  .hero__h1 {
+    font-size: 30px;
+    line-height: 120%;
+  }
 
-    .hero__right {
-        width: 100%;
-    }
-
+  .hero__right {
+    width: 100%;
+  }
 }
 
-
 @media (max-width: 480px) {
-    .hero {
-        padding: 0 24px;
-    }
+  .hero {
+    padding: 0 24px;
+  }
 
-    .button {
-        padding: 12px 32px;
-    }
+  .button {
+    padding: 12px 32px;
+  }
 
-    .hero_cta {
-        gap: 16px;
-    }
+  .hero_cta {
+    gap: 16px;
+  }
 }

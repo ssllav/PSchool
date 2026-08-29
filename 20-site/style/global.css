@@ -23,6 +23,7 @@
 
 html {
     --color-primary: green;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -31,5 +32,4 @@ body {
     font-family: 'Fira Sans', Courier, monospace;
     font-style: normal;
     font-weight: 400;
-    color: var(--color-text);
 }
